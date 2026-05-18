@@ -1,0 +1,18 @@
+[project]
+name = "graph_rag_workshop"
+version = "0.1.0"
+description = "Experiment with agents using Pydantic AI, creating programmable AI agents that can call tools to answer queries."
+readme = "README.md"
+authors = [{name = "Ornella Vaccarelli", email = "ornella.vaccarelli@hefr.ch"}, {name = "Federica Bove", email = "federica.bove@hefr.ch"}]
+requires-python = ">=3.13"
+dependencies = [
+    "loguru>=0.7.3",
+    "pydantic-ai-slim[openai]>=1.90.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.6,<0.11.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
