@@ -6,13 +6,16 @@ readme = "README.md"
 authors = [{name = "Ornella Vaccarelli", email = "ornella.vaccarelli@hefr.ch"}, {name = "Federica Bove", email = "federica.bove@hefr.ch"}]
 requires-python = ">=3.13"
 dependencies = [
+    "chromadb>=1.5.5",
     "loguru>=0.7.3",
-    "pydantic-ai-slim[openai]>=1.90.0",
+    "pdfminer-six>=20260107",
+    "pydantic>=2.12.4",
+    "pydantic-ai-slim[duckduckgo,openai,ui]>=1.90.0",
+    "pyvis>=0.3.2",
+    "rapidocr>=3.8.1",
+    "uvicorn>=0.46.0",
 ]
 
 [build-system]
 requires = ["uv_build>=0.10.6,<0.11.0"]
 build-backend = "uv_build"
-
-[tool.uv]
-package = false
