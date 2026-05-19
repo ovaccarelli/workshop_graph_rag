@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "party:Organizer",
+      "kind": "party",
+      "label": "Organizer",
+      "properties": {
+        "name": "Elven Ledger Council of Rivendell SA"
+      }
+    },
+    {
+      "id": "party:Provider",
+      "kind": "party",
+      "label": "Provider",
+      "properties": {
+        "name": "Shire Hospitality Cooperative GmbH"
+      }
+    },
+    {
+      "id": "obligation:Provide setup access at least 90 minutes before event start",
+      "kind": "obligation",
+      "label": "Provide setup access at least 90 minutes before event start",
+      "properties": {}
+    },
+    {
+      "id": "date:16:30",
+      "kind": "date",
+      "label": "16:30",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Confirm final headcount no later than 5 calendar days before event date",
+      "kind": "obligation",
+      "label": "Confirm final headcount no later than 5 calendar days before event date",
+      "properties": {}
+    },
+    {
+      "id": "date:11 May 2026",
+      "kind": "date",
+      "label": "11 May 2026",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Provide dietary restrictions no later than 5 calendar days before event date",
+      "kind": "obligation",
+      "label": "Provide dietary restrictions no later than 5 calendar days before event date",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Provide confirmation of selected venue option",
+      "kind": "obligation",
+      "label": "Provide confirmation of selected venue option",
+      "properties": {}
+    },
+    {
+      "id": "date:02 May 2026",
+      "kind": "date",
+      "label": "02 May 2026",
+      "properties": {}
+    },
+    {
+      "id": "obligation:On-site coordination contact and access instructions",
+      "kind": "obligation",
+      "label": "On-site coordination contact and access instructions",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Deliver the services listed in Annex A in a professional manner",
+      "kind": "obligation",
+      "label": "Deliver the services listed in Annex A in a professional manner",
+      "properties": {}
+    },
+    {
+      "id": "date:24 May 2026",
+      "kind": "date",
+      "label": "24 May 2026",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Bring materials required for service as listed in Annex A",
+      "kind": "obligation",
+      "label": "Bring materials required for service as listed in Annex A",
+      "properties": {}
+    }
+  ],
+  "edges": [
+    {
+      "source": "party:Organizer",
+      "relation": "must_do",
+      "target": "obligation:Provide setup access at least 90 minutes before event start",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Annex A - Setup access: from 16:30"
+    },
+    {
+      "source": "obligation:Provide setup access at least 90 minutes before event start",
+      "relation": "due_by",
+      "target": "date:16:30",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Annex A - Setup access: from 16:30"
+    },
+    {
+      "source": "party:Organizer",
+      "relation": "must_do",
+      "target": "obligation:Confirm final headcount no later than 5 calendar days before event date",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Annex A - Organizer inputs due by 11 May 2026"
+    },
+    {
+      "source": "obligation:Confirm final headcount no later than 5 calendar days before event date",
+      "relation": "due_by",
+      "target": "date:11 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Annex A - Organizer inputs due by 11 May 2026"
+    },
+    {
+      "source": "party:Organizer",
+      "relation": "must_do",
+      "target": "obligation:Provide dietary restrictions no later than 5 calendar days before event date",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Annex A - Organizer inputs due by 11 May 2026"
+    },
+    {
+      "source": "obligation:Provide dietary restrictions no later than 5 calendar days before event date",
+      "relation": "due_by",
+      "target": "date:11 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Annex A - Organizer inputs due by 11 May 2026"
+    },
+    {
+      "source": "party:Organizer",
+      "relation": "must_do",
+      "target": "obligation:Provide confirmation of selected venue option",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Annex A - Confirmation of selected venue option"
+    },
+    {
+      "source": "obligation:Provide confirmation of selected venue option",
+      "relation": "due_by",
+      "target": "date:02 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Annex A - Confirmation of selected venue option"
+    },
+    {
+      "source": "party:Organizer",
+      "relation": "must_do",
+      "target": "obligation:On-site coordination contact and access instructions",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Annex A - On-site coordination contact and access instructions"
+    },
+    {
+      "source": "obligation:On-site coordination contact and access instructions",
+      "relation": "due_by",
+      "target": "date:02 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Annex A - On-site coordination contact and access instructions"
+    },
+    {
+      "source": "party:Provider",
+      "relation": "must_do",
+      "target": "obligation:Deliver the services listed in Annex A in a professional manner",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Article 5 - Deliver the services listed in Annex A in a professional manner"
+    },
+    {
+      "source": "obligation:Deliver the services listed in Annex A in a professional manner",
+      "relation": "due_by",
+      "target": "date:24 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Article 5 - Deliver the services listed in Annex A in a professional manner"
+    },
+    {
+      "source": "party:Provider",
+      "relation": "must_do",
+      "target": "obligation:Bring materials required for service as listed in Annex A",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Article 5 - Bring materials required for service as listed in Annex A"
+    },
+    {
+      "source": "obligation:Bring materials required for service as listed in Annex A",
+      "relation": "due_by",
+      "target": "date:24 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "Article 5 - Bring materials required for service as listed in Annex A"
+    }
+  ]
+}
